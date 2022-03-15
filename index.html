@@ -18,7 +18,7 @@
 
 
 <body class="d-flex h-100 text-center" style="height:100vh !important;
-        background-image: url('https://gifimage.net/wp-content/uploads/2018/05/spaceship-gif-1.gif');
+        background-image: url('https://www.img.in.th/images/4ed1ef208b333b3dab94060038909b8b.gif');
         /* background: linear-gradient(to bottom,#51010a 40%,#55000a 80%); */
         background-repeat: no-repeat;
         background-size: cover;
@@ -29,7 +29,7 @@
     <main class="card-columns mx-auto d-flex justify-content-center col-12 col-sm-12">
       <div class="card" style="background: rgb(0 0 0 / 60%);margin-top: 0px;border: 0px;border-radius: 15px;">
         <div class="card-body p-3 p-sm-4">
-          <!--img src="https://i.imgur.com/Cp1PLyC.jpg" class="img-fluid" style="width: 100%;"-->
+          <!--img src="https://www.img.in.th/images/ce33943f27788b5196b2f0dd4aa13190.jpg" class="img-fluid" style="width: 100%;"-->
           <!--ส่วนรูปโปรโมชั่น และ ลิ้งออกจากรูปภาพ-->
           <img src="https://i.imgur.com/Cp1PLyC.jpg" class="img-fluid" style="width: 400px;border-radius: 15px;">
           <p class="lead mb-4 mt-3" style="font-family: 'Kanit', sans-serif;font-size: 28px;font-weight: 500;">เเชร์ 10 กลุ่มรับเครดิตฟรี 100 <br> ส่งกิจกรรมที่ Line : @564izmzq</p>
@@ -50,75 +50,55 @@
   <script>
     async function sendShare() {
       const result = await liff.shareTargetPicker([{
-        "type": "flex",
-        "altText": "โอนให้แล้วนะ 100",
-    "type": "flex",
-    "contents": {
-      "type": "bubble",
-      "size": "giga",
-      "hero": {
-        "type": "image",
-        "url": "https://s7.gifyu.com/images/Untitled-21ed52157b87d96662.jpg",
-        "size": "full",
-        "margin": "none",
-        "aspectMode": "cover",
-        "aspectRatio": "1:1",
+        "type": "bubble",
+  "size": "giga",
+  "hero": {
+    "type": "image",
+    "url": "https://www.img.in.th/images/f7efe389c45a3cd9f7e3255f4771d396.jpg",
+    "size": "full",
+    "aspectRatio": "1:1",
+    "aspectMode": "cover",
+    "action": {
+      "type": "uri",
+      "uri": "https://login.slotsuperwallet.com/"
+    }
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "style": "primary",
+        "height": "sm",
         "action": {
           "type": "uri",
-          "label": "action",
-          "uri": "https://bit.ly/34ESUfF"
-        }
+          "label": "สมัคร",
+          "uri": "https://login.slotsuperwallet.com/"
+        },
+        "color": "#EC0017"
       },
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "text",
-            "text": "รับเครดิตฟรี 100.-",
-            "size": "md",
-            "margin": "none",
-            "weight": "bold",
-            "align": "center",
-            "color": "#130907"
-          },
-          {
-            "type": "button",
-            "action": {
-              "type": "uri",
-              "label": "รับเครดิตฟรี 100",
-              "uri": "https://bit.ly/34ESUfF"
-            },
-            "color": "#D21617",
-            "style": "primary",
-            "height": "md",
-            "offsetTop": "xs",
-            "offsetBottom": "none",
-            "offsetStart": "none",
-            "gravity": "center",
-            "margin": "xs",
-            "adjustMode": "shrink-to-fit"
-          },
-          {
-            "type": "button",
-            "action": {
-              "type": "uri",
-              "label": "ส่งให้เพื่อน",
-              "uri": "https://liff.line.me/1656969243-A61OmZNP"
-            },
-            "color": "#F15A0A",
-            "style": "primary",
-            "height": "md",
-            "offsetTop": "xs",
-            "offsetBottom": "none",
-            "offsetStart": "none",
-            "gravity": "center",
-            "margin": "xs",
-            "adjustMode": "shrink-to-fit"
+      {
+        "type": "button",
+        "style": "primary",
+        "height": "sm",
+        "action": {
+          "type": "uri",
+          "label": "แชร์",
+          "uri": "https://liff.line.me/1656976269-lee6NjO9"
+        },
+        "color": "#E0730A"
       }
-    ]
+    ],
+    "flex": 0,
+    "margin": "sm",
+    "action": {
+      "type": "uri",
+      "label": "action",
+      "uri": "https://login.slotsuperwallet.com/"
+    }
   }
-}
       }])
       if (result) {
       alert(`[${result.status}] แชร์สำเร็จ`)
@@ -143,7 +123,7 @@
     }
     async function main() {
       await liff.init({
-        liffId: "1656969243-A61OmZNP"
+        liffId: "1656976269-lee6NjO9"
       })
       if (!liff.isLoggedIn()) {
         liff.login()
