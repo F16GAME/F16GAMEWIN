@@ -51,8 +51,57 @@
   <script>
   async function sendShare() { 
    const result = await liff.shareTargetPicker([
-   
-CODE 👇🏻
+   {
+  "type": "bubble",
+  "size": "giga",
+  "hero": {
+    "type": "image",
+    "url": "https://www.img.in.th/images/f7efe389c45a3cd9f7e3255f4771d396.jpg",
+    "size": "full",
+    "aspectRatio": "1:1",
+    "aspectMode": "cover",
+    "action": {
+      "type": "uri",
+      "uri": "https://login.slotsuperwallet.com/"
+    }
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "style": "primary",
+        "height": "sm",
+        "action": {
+          "type": "uri",
+          "label": "สมัคร",
+          "uri": "https://login.slotsuperwallet.com/"
+        },
+        "color": "#EC0017"
+      },
+      {
+        "type": "button",
+        "style": "primary",
+        "height": "sm",
+        "action": {
+          "type": "uri",
+          "label": "แชร์",
+          "uri": "https://liff.line.me/1656976269-lee6NjO9"
+        },
+        "color": "#E0730A"
+      }
+    ],
+    "flex": 0,
+    "margin": "sm",
+    "action": {
+      "type": "uri",
+      "label": "action",
+      "uri": "https://login.slotsuperwallet.com/"
+    }
+  }
+}🏻
 
       }])
       if (result) {
